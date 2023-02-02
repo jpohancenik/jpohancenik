@@ -1,0 +1,22 @@
+{
+  "name": "email-templates",
+  "version": "0.0.1",
+  "description": "Email templates dev",
+  "main": "index.js",
+  "scripts": {
+    "email": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "email",
+    "templates",
+    "development",
+    "testing"
+  ],
+  "author": "pohancenikj@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "inline-css": "^4.0.1",
+    "node-sass": "^8.0.0"
+  }
+}

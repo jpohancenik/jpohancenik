@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Skoda Next';
+  src: local( 'Skoda Next' ),
+  local( 'SKODANext-Regular' ),
+  url( 'https://www.skoda-connect.com/static/media/SKODANext-Regular.1d107d99.woff' ) format( 'woff' );
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Skoda Next';
+  src: local( 'Skoda Next Bold' ),
+  local( 'SKODANext-Bold' ),
+  url( 'https://www.skoda-connect.com/static/media/SKODANext-Bold.fdd3c7e9.woff' ) format( 'woff' );
+  font-weight: 700;
+  font-style: normal;
+}
