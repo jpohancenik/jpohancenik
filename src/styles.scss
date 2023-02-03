@@ -9,12 +9,17 @@
   }
 }
 
+$color-text: #161718;
+$color-text-secondary: #464748;
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 'Skoda Next', sans-serif;
   text-align: center;
+  color: $color-text;
+  letter-spacing: 0.02rem;
 }
 
 .h1 {
@@ -25,6 +30,7 @@ body {
 .perex {
   line-height: px-to-rem(24);
   font-weight: bold;
+  color: $color-text-secondary;
 }
 
 .container {
@@ -60,4 +66,91 @@ body {
 .logo-text {
   font-size: px-to-rem(14);
   font-weight: bold;
+}
+
+.qr-wrapper {
+  display: inline-block;
+  border-radius: px-to-rem(4);
+  border: dashed #C4C6C7 px-to-rem(1);
+  padding: px-to-rem(10);
+  margin-bottom: px-to-rem(12);
+
+  img {
+    display: block;
+  }
+}
+
+.image-caption {
+  font-weight: 900;
+  font-size: px-to-rem(11);
+  line-height: px-to-rem(14);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 px-to-rem(1) px-to-rem(4) px-to-rem(1) #f0f0f0;
+  padding: px-to-rem(20) px-to-rem(16);
+  margin-bottom: px-to-rem(16);
+  color: $color-text-secondary;
+
+  a {
+    color: $color-text-secondary;
+  }
+
+  &__grid-table {
+    border: none;
+
+    td {
+      vertical-align: top;
+    }
+
+    &-icon-wrapper {
+      width: px-to-rem(20);
+      text-align: center;
+      padding-right: px-to-rem(8);
+    }
+  }
+
+  &__title {
+    font-size: px-to-rem(11);
+    font-weight: 900;
+    line-height: px-to-rem(14);
+    color: #7C7D7E;
+    text-transform: uppercase;
+    letter-spacing: 0.26em;
+    margin: 0 0 px-to-rem(18) 0;
+  }
+
+  &__text {
+    font-size: px-to-rem(12);
+    line-height: px-to-rem(16);
+    margin: 0 0 px-to-rem(16) 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button {
+  display: block;
+  color: $color-text;
+  text-decoration: none;
+  border: none;
+  border-radius: px-to-rem(212);
+  width: px-to-rem(216);
+  font-size: px-to-rem(16);
+  font-weight: bold;
+  line-height: px-to-rem(24);
+  padding: px-to-rem(10) px-to-rem(24);
+  margin-left: auto;
+  margin-right: auto;
+
+  &--primary {
+    background-color: #78FAAE;
+  }
 }
