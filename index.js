@@ -10,7 +10,7 @@ sass.render({
   error && console.error('SASS ERROR', error)
   !error && inlineCss(htmlContent.replace('[styles]', result.css), {
     url: '/.dist/style.css',
-    preserveMediaQueries: true,
+    preserveMediaQueries: false,
     removeHtmlSelectors: true,
   })
     .then((result) => {
