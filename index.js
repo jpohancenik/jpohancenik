@@ -17,7 +17,7 @@ sass.render({
     removeHtmlSelectors: true,
   })
     .then((result) => {
-      fs.writeFileSync('./root/index.html', result.toString());
+      fs.writeFileSync('./docs/index.html', result.toString());
     })
     .catch((e) => console.log(e));
 });
