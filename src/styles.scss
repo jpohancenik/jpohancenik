@@ -98,7 +98,9 @@ hr {
 
 .img-fluid {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .table-logos {
@@ -111,16 +113,37 @@ hr {
   }
 }
 
-.qr-wrapper {
+.table-valign {
+  td {
+    vertical-align: middle;
+  }
+}
+
+.code-wrapper {
   display: inline-block;
   border-radius: px-to-rem(4);
-  border: dashed #C4C6C7 px-to-rem(1);
+  border: solid #C4C6C7 px-to-rem(1);
   padding: px-to-rem(10);
   margin-bottom: px-to-rem(12);
+
+  &--wide {
+    padding: px-to-rem(13) px-to-rem(32);
+  }
 
   img {
     display: block;
   }
+}
+
+.code-text {
+  display: inline-block;
+  font-weight: 900;
+  font-size: px-to-rem(11);
+  line-height: px-to-rem(14);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
 }
 
 .card {
@@ -160,6 +183,32 @@ hr {
   }
 }
 
+.article {
+  margin-bottom: px-to-rem(36);
+
+  &__title {
+    font-size: px-to-rem(27);
+    line-height: px-to-rem(32);
+  }
+
+  &__title-col {
+    font-size: px-to-rem(23);
+    line-height: px-to-rem(28);
+  }
+
+  &__table {
+    table-layout: fixed;
+
+    td {
+      width: 50%;
+    }
+
+    .text-col {
+      padding-left: px-to-rem(24);
+    }
+  }
+}
+
 .poll {
   @extend .container;
   background-color: #f1f1f1;
@@ -184,4 +233,9 @@ hr {
   letter-spacing: px-to-rem(0.75);
   padding: px-to-rem(10) px-to-rem(22);
   margin-right: px-to-rem(16);
+}
+
+.wrapper-36 {
+  margin: px-to-rem(36) 0;
+  text-align: center;
 }
