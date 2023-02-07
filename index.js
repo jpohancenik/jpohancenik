@@ -1,8 +1,8 @@
 const sass = require('node-sass');
 const fs = require('fs')
 const inlineCss = require('inline-css');
-// const domain = 'https://email-templates-sa.netlify.app/'
-const domain = './'
+const domain = 'https://saemail.netlify.app/'
+// const domain = './'
 
 const htmlContent = fs.readFileSync('./src/template.html').toString().replaceAll('[domain]', domain)
 
