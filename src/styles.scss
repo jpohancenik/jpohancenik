@@ -33,14 +33,18 @@ body {
   background-color: #fff;
 }
 
+.div {
+  border-spacing: 0;
+  width: 100%;
+}
 
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 
   @include on-desktop {
-    padding-left: 48px;
-    padding-right: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }
 
@@ -210,9 +214,8 @@ hr {
 }
 
 .poll {
-  @extend .container;
   background-color: #f1f1f1;
-  padding: px-to-rem(48) 0;
+  padding: px-to-rem(48) px-to-rem(16);
 
   &__title {
     font-size: px-to-rem(23);
