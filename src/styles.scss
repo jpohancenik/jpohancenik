@@ -9,6 +9,7 @@
   }
 }
 
+$font-family: 'Skoda Next', Tahoma, Helvetica, sans-serif;
 $color-text: #161718;
 
 body {
@@ -16,7 +17,7 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: px-to-rem(24);
-  font-family: 'Skoda Next', Tahoma, Helvetica, sans-serif;
+  font-family: $font-family;
   font-weight: 300;
   text-align: center;
   color: $color-text;
@@ -25,6 +26,7 @@ body {
 }
 
 .content {
+  font-family: $font-family;
   text-align: left;
   max-width: 600px;
   width: 100%;
@@ -61,9 +63,10 @@ body {
   line-height: px-to-rem(16);
   background-color: #0E3A2F;
   color: #fff;
-  padding: px-to-rem(32) px-to-rem(24);
+  padding: px-to-rem(32) px-to-rem(16);
 
   a {
+    font-family: $font-family;
     color: #fff;
   }
 
@@ -81,7 +84,11 @@ body {
 
       a {
         text-decoration: none;
-        margin-left: px-to-rem(24);
+        margin-left: px-to-rem(16);
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -94,10 +101,28 @@ hr {
   background: none;
 }
 
+td {
+  font-family: $font-family;
+}
+
 .h1 {
+  display: block;
   font-size: px-to-rem(27);
+  font-family: $font-family;
   line-height: px-to-rem(33);
   margin: px-to-rem(48) 0 px-to-rem(24);
+}
+
+.h3 {
+  display: block;
+  font-family: $font-family;
+  margin: px-to-rem(24) 0;
+}
+
+.p {
+  display: block;
+  font-family: $font-family;
+  margin: px-to-rem(16) 0;
 }
 
 .img-fluid {

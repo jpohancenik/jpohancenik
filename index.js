@@ -6,6 +6,7 @@ const domain = 'https://jpohancenik.github.io/jpohancenik/'
 // const domain = './'
 
 const htmlContent = fs.readFileSync('./src/template.html').toString().replaceAll('[domain]', domain)
+console.log(`Using domain ${domain}`);
 
 sass.render({
   file: './src/styles.scss',
@@ -17,6 +18,7 @@ sass.render({
     removeHtmlSelectors: true,
   })
     .then((result) => {
+      console.log(`Writing to docs`);
       fs.writeFileSync('./docs/index.html', result.toString());
     })
     .catch((e) => console.log(e));
