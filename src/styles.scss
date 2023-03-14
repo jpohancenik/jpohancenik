@@ -65,9 +65,18 @@ body {
   color: #fff;
   padding: px-to-rem(32) px-to-rem(16);
 
+  td {
+    color: #fff;
+  }
+
   a {
     font-family: $font-family;
     color: #fff;
+    text-decoration: none;
+  }
+
+  &__contact {
+    padding-top: px-to-rem(16);
   }
 
   table {
@@ -108,6 +117,7 @@ td {
 .h1 {
   display: block;
   font-size: px-to-rem(27);
+  font-weight: bold;
   font-family: $font-family;
   line-height: px-to-rem(33);
   margin: px-to-rem(48) 0 px-to-rem(24);
@@ -116,6 +126,7 @@ td {
 .h3 {
   display: block;
   font-family: $font-family;
+  font-weight: bold;
   margin: px-to-rem(24) 0;
 }
 
@@ -165,6 +176,8 @@ td {
 }
 
 .code-text {
+  @extend .p;
+
   display: inline-block;
   font-weight: 900;
   font-size: px-to-rem(11);
@@ -198,12 +211,14 @@ td {
 
   &__title {
     font-size: px-to-rem(16);
-    font-weight: 700;
+    font-weight: bold;
     line-height: px-to-rem(24);
     margin: 0;
   }
 
   &__text {
+    @extend .p;
+
     margin: 0 0 px-to-rem(16) 0;
 
     &:last-child {
@@ -216,11 +231,15 @@ td {
   margin-bottom: px-to-rem(36);
 
   &__title {
+    @extend .h3;
+
     font-size: px-to-rem(27);
     line-height: px-to-rem(32);
   }
 
   &__title-col {
+    @extend .h3;
+
     font-size: px-to-rem(23);
     line-height: px-to-rem(28);
   }
@@ -243,6 +262,8 @@ td {
   padding: px-to-rem(48) px-to-rem(16);
 
   &__title {
+    @extend .h3;
+
     font-size: px-to-rem(23);
     line-height: px-to-rem(28);
     margin: 0 0 px-to-rem(24) 0;
@@ -261,6 +282,11 @@ td {
   letter-spacing: px-to-rem(0.75);
   padding: px-to-rem(10) px-to-rem(22);
   margin-right: px-to-rem(16);
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+  }
 }
 
 .wrapper-36 {
